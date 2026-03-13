@@ -1,0 +1,77 @@
+body {
+margin: 0;
+min-height: 100vh;
+font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+background: radial-gradient(circle at top left, #00d4ff 0%, #ffdd57 40%, #fff 100%);
+color: #1a1a1a;
+}
+
+form {
+background: rgba(255,255,255,0.9);
+backdrop-filter: blur(10px);
+box-shadow: 0 16px 40px rgba(0,0,0,0.2);
+border: 2px solid rgba(255,255,255,0.6);
+border-radius: 24px;
+padding: 2rem;
+width: min(100%, 420px);
+margin: 1rem;
+text-align: center;
+}
+
+label {
+display: block;
+margin-bottom: 0.35rem;
+font-size: 1.1rem;
+font-weight: 600;
+color: #223;
+}
+
+input, select {
+width: 100%;
+border: 1px solid #9bb;
+border-radius: 10px;
+padding: 0.75rem 0.9rem;
+margin-bottom: 0.9rem;
+font-size: 1rem;
+background: rgba(255,255,255,0.95);
+transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus, select:focus {
+border-color: #39f;
+box-shadow: 0 0 0 4px rgba(57, 138, 255, 0.2);
+outline: none;
+}
+
+button {
+width: 100%;
+font-size: 1rem;
+font-weight: 700;
+color: #111;
+background: linear-gradient(120deg, #7ce2f7, #f8f741);
+border: none;
+border-radius: 12px;
+padding: 0.8rem;
+cursor: pointer;
+transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+transform: translateY(-2px);
+box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+}
+
+button:active {
+transform: translateY(0);
+background: linear-gradient(11deg, #717107, #f3f707); 
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+form { margin: 16px; padding: 1rem; }
+label { font-size: 1rem; }
+button { padding: 0.7rem; }
+}
